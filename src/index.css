@@ -157,7 +157,7 @@
 
 }
 
-@media (min-width:705px) {
+@media (min-width: 705px) {
   .footer_link {
     transform: translateX(0);
     transition: transform 0.3s ease;
@@ -165,5 +165,14 @@
 
   .footer_link:hover {
     transform: translateX(15px);
+  }
+
+  .client_img {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .client_img:hover {
+    transform: scale(1.1);
   }
 }
