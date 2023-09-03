@@ -11,7 +11,7 @@
 * {
   scroll-behavior: smooth;
   scroll-padding-top: 180px !important;
-  scroll-snap-align: start !important;
+  scroll-snap-align: start !important;
 }
 
 /* Figma gradient start */
@@ -145,12 +145,25 @@
     font-size: 12px;
   }
 }
+
 @media (max-width:705px) {
-  *{
+  * {
     scroll-padding-top: 150px;
   }
-    section.features{
+
+  section.features {
     scroll-padding-top: 200px !important;
   }
 
+}
+
+@media (min-width:705px) {
+  .footer_link {
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+  }
+
+  .footer_link:hover {
+    transform: translateX(15px);
+  }
 }

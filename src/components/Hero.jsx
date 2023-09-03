@@ -1,22 +1,30 @@
 import { Container, Row, Col } from "react-bootstrap";
+import { motion } from "framer-motion";
 import { discount, robot } from "../assets/Assets";
 import GetStarted from "./GetStarted";
+import { fadeVariants } from "./Animation"; // Import your fade-in animation variant
 
 const Hero = () => {
   return (
-    <section id="home" className="d-flex ">
+    <motion.section
+      id="home"
+      className="d-flex"
+      initial="initial" // Set initial animation state
+      animate="animate" // Set animate animation state
+      variants={fadeVariants} // Use the fade-in animation variant
+    >
       <Container>
-        <Row className="justify-content-between align-items-center pe-4 ">
+        <Row className="justify-content-between align-items-center pe-4">
           <Col md="12" lg="6">
-            <div className="d-flex align-items-center py-2 px-3 bg-discount-gradient rounded-3 my-2 my-4 w-content ">
+            <div className="d-flex align-items-center py-2 px-3 bg-discount-gradient rounded-3 my-2 my-4 w-content">
               <img src={discount} alt="discount" />
-              <p className="text-white-50 mx-2 mb-0 fs-5 ">
+              <p className="text-white-50 mx-2 mb-0 fs-5">
                 <span className="text-white">20%</span> Discount For
                 <span className="text-white"> 1 Month</span> Account
               </p>
             </div>
 
-            <div className="d-flex ">
+            <div className="d-flex">
               <h1 className="fw-bold text-white display-1">
                 The Next
                 <br />
@@ -28,7 +36,7 @@ const Hero = () => {
             </div>
 
             <h1 className="text-white display-2 fw-bold">Payment Method.</h1>
-            <p className="mt-5 text-secondary  fs-5">
+            <p className="mt-5 text-secondary fs-5">
               Our team of experts uses a methodology to identify the credit
               cards to fit your needs. We examine annual percentage rates,
               annual fees.
@@ -51,7 +59,7 @@ const Hero = () => {
           </Col>
         </Row>
       </Container>
-    </section>
+    </motion.section>
   );
 };
 

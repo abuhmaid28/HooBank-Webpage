@@ -21,11 +21,11 @@ const Footer = () => (
             {footerLinks.map((footerlink) => (
               <div key={footerlink.title} className="col-4 p-4 mb-4">
                 <h4 className="footer_title text-white">{footerlink.title}</h4>
-                <ul className="list-unstyled mt-4 footer_link">
+                <ul className="list-unstyled mt-4 ">
                   {footerlink.links.map((link, index) => (
                     <li
                       key={link.name}
-                      className={`text-normal text-secondary  ${
+                      className={`text-normal text-secondary link-info footer_link ${
                         index !== footerlink.links.length - 1 ? "mb-4" : "mb-0"
                       }`}
                     >
@@ -47,7 +47,7 @@ const Footer = () => (
             Created By :{" "}
             <a
               href="https://www.linkedin.com/in/sohaila128/"
-              className="text-decoration-none  text-white"
+              className="text-decoration-none  text-white link-info"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -56,7 +56,7 @@ const Footer = () => (
             &{" "}
             <a
               href="https://www.linkedin.com/in/abuhmaid28/"
-              className="text-decoration-none text-white"
+              className="text-decoration-none text-white link-info"
               target="_blank"
               rel="noopener noreferrer"
             >
