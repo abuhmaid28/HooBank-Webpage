@@ -1,8 +1,28 @@
-# React + Vite
+# HooBank Webpage
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to HooBank Webpage, a collaborative project created with Sohaila Abo Elwafa. This project is a banking webpage built using React and Bootstrap.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Responsive Design
+- Ensures a seamless experience across all devices, including desktops, tablets, and mobiles using responsive design principles.
+
+### Navigation Bar
+- Provides easy navigation through the website with links to important sections.
+
+### Hero Section
+- Introduces the website with a prominent header and call-to-action.
+
+### Services Section
+- Highlights the banking services offered with detailed descriptions.
+
+### Testimonials Section
+- Features customer testimonials or reviews.
+
+### Contact Form
+- Allows users to contact the bank for inquiries or support.
+
+## Technologies Used
+
+- **React**
+- **Bootstrap**
